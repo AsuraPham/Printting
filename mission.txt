@@ -1,0 +1,2 @@
+﻿1. Không hiển thị phần mềm chạy print.exe( chạy ngầm người dùng khoogn biết)
+2. Kết nối in được máy in
