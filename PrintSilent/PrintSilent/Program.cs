@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Drawing;
-using System.Drawing.Printing;
-using System.IO;
-
+using System.ComponentModel;
 
 namespace PrintSilent
 {
@@ -10,8 +7,15 @@ namespace PrintSilent
     {
         private static void Main(string[] args)
         {
-            var myPrint = new Printing();
-            myPrint.Print("E:\\MyFile.txt");
+            foreach (var arg in args)
+            {
+                Console.WriteLine(arg);
+            }
+            var myPrint = new Printing("FormB");
+            // myPrint.ReadFile();
+            //PrinterByFormConfigObj ab=new PrinterByFormConfigObj("ahha","hehe");
+             //myPrint.AppendToConfigFile(ab);
+            myPrint.ProcessPrint("E:\\MyFile.txt");
         }
     }
 }
