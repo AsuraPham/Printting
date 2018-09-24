@@ -11,10 +11,7 @@ namespace PrintSilent
             {
                 Console.WriteLine(arg);
             }
-            var myPrint = new Printing("FormB");
-            // myPrint.ReadFile();
-            //PrinterByFormConfigObj ab=new PrinterByFormConfigObj("ahha","hehe");
-             //myPrint.AppendToConfigFile(ab);
+            var myPrint = new Printing("Formh");
             myPrint.ProcessPrint("E:\\MyFile.txt");
         }
     }
